@@ -1,0 +1,10 @@
+#!/bin/bash
+
+TIMEFORMAT=%5R
+
+rm info.txt
+
+mpirun -n 2 ./reduce    >> info.txt
+mpirun -n 2 ./scatter   >> info.txt
+mpirun -n 2 ./gather    >> info.txt
+mpirun -n 2 ./bcast     >> info.txt
