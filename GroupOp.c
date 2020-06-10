@@ -52,7 +52,7 @@ int main(int argc, char *argv[]) {
 
     int n_loops = 1;
     double times[n_loops];
-    int test = 1;
+    int test = 1; // 1 means print out results of operation
 
     // BCAST part
     double mean_time = 0;
